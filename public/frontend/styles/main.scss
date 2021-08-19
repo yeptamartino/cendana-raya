@@ -1,0 +1,723 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Assistant", sans-serif;
+    color: #071c4d;
+}
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: 50% 50% no-repeat rgb(249, 249, 249);
+    opacity: .8;
+}
+
+//Navbar
+.navbar-brand {
+    img {
+        max-height: 40px;
+    }
+}
+
+.navbar-light {
+    .navbar-nav {
+        .nav-link {
+            color: #071c4d;
+            &.active {
+                font-weight: bold;
+                color: #071c4d !important;
+            }
+        }
+    }
+}
+
+.btn-navbar-right {
+    margin-top: -10px !important;
+    margin-bottom: -8px !important;
+    margin-right: -18px !important;
+    height: 70px;
+    border-radius: 0;
+}
+
+.btn-login {
+    background-color: #EA4A34;
+    color: #fff;
+    &:hover {
+        background-color: #F86F5C;
+        color: #fff;
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+//Header
+header {
+    padding: 180px 0 165px;
+    margin-top: -70px;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    h1,
+    p {
+        color: #fff;
+    }
+    h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+        color: #fff;
+    }
+    p {
+        font-family: "Assistant", sans-serif;
+        font-weight: normal;
+        font-size: 22px;
+        color: #fff;
+    }
+    .btn-get-started {
+        background-color: #ff9e53;
+        color: #fff;
+        &:hover {
+            background-color: #ffaa69;
+            color: #fff;
+        }
+    }
+}
+
+//Statistics
+.section-stats {
+    margin-top: -50px;
+    .stats-detail {
+        padding-top: 15px;
+        background-color: #fff;
+        padding-left: 40px;
+    }
+    h2 {
+        font-size: 50px;
+        margin-bottom: 0;
+    }
+    p {
+        font-size: 20px;
+        font-weight: normal;
+    }
+}
+
+//Popular
+.section-popular {
+    min-height: 540px;
+    background-color: #EDECEA;
+    margin-top: -75px;
+    margin-bottom: -230px;
+    .section-popular-heading {
+        margin-top: 150px;
+        h2,
+        p {
+            color: #2F1808;
+        }
+        h2 {
+            font-family: "Poppins", sans-serif;
+            font-weight: bold;
+            font-size: 40px;
+            color: #2f1808;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+.section-popular-content {
+    .section-popular-travel {
+        .card-travel {
+            min-height: 380px;
+            background-color: #ddd;
+            color: #fff;
+            padding: 30px;
+            background-size: cover;
+            margin-bottom: 20px;
+        }
+        .travel-country {
+            font-size: 18px;
+            color: #fff;
+        }
+        .travel-location {
+            font-size: 26px;
+            color: #fff;
+        }
+        .travel-button {
+            .btn-travel-details {
+                background-color: #ff9e53;
+                color: #fff;
+                &:hover {
+                    background-color: #ffaa69;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.section-network {
+    background-color: #fff;
+    margin-top: -170px;
+    padding-top: 240px;
+    padding-bottom: 50px;
+    h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    p {
+        font-size: 18px;
+    }
+    img {
+        max-width: 100%;
+    }
+}
+
+.section-testimonial-heading {
+    background: linear-gradient(#fff 0%, #f7f9ff 100%);
+    padding-top: 50px;
+    min-height: 506px;
+    h2 {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+        color: #071c4d;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
+.section-testimonial-content {
+    margin-top: -300px;
+    padding-bottom: 50px;
+    .card-testimonial {
+        padding: 40px 20px 10px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        .testimonial-content {
+            min-height: 380px;
+            h3 {
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                font-size: 22px;
+                text-align: center;
+                color: #071c4d;
+                ;
+            }
+            .testimonial {
+                font-family: "Poppins", sans-serif;
+                font-weight: normal;
+                font-size: 22px;
+                color: #a6a6a6;
+            }
+            hr {
+                margin-right: -20px;
+                margin-left: -20px;
+            }
+        }
+        .trip-to {
+            font-family: "Assistant", sans-serif;
+            font-weight: normal;
+            font-size: 22px;
+            color: #6e6e6e;
+        }
+    }
+    .btn-need-help {
+        background-color: #f2f2f2;
+        color: #c3c3c3;
+        &:hover {
+            background-color: #fafafa;
+            color: #fff;
+        }
+    }
+    .btn-get-started {
+        background-color: #ff9e53;
+        color: #fff;
+        &:hover {
+            background-color: #ffaa69;
+            color: #fff;
+        }
+    }
+}
+
+//Detail Toko
+.header2 {
+    padding: 400px 0 210px;
+    margin-top: -70px;
+    background-image: url("../images/bg_detail_toko.jpg");
+    background-size: cover;
+}
+
+.section-network2 {
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    h2 {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+        color: #071c4d;
+    }
+    p {
+        font-size: 18px;
+    }
+    img {
+        max-width: 100%;
+    }
+}
+
+.features2 {
+    margin-top: 20px;
+    h3 {
+        font-family: "Assistant", sans-serif;
+        font-weight: 300;
+        font-size: 22px;
+        text-align: left;
+        color: #071c4d;
+    }
+    p {
+        font-family: Assistant;
+        font-weight: 300;
+        font-size: 17px;
+        text-align: left;
+        color: #b1b1b1;
+        // margin-bottom: 0;
+    }
+    .description {
+        text-align: center;
+        margin-left: 10px;
+        float: left;
+    }
+    .features-image {
+        width: 55px;
+        height: 56px;
+        float: left;
+    }
+}
+
+.card-details2 {
+    padding: 30px;
+    border-radius: 11px;
+    h2 {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+    }
+    h5 {
+        font-size: 18px;
+        text-align: center;
+    }
+    p {
+        font-size: 27px;
+        font-weight: 300;
+        color: #b1b1b1;
+    }
+}
+
+.section-testimonial-heading2 {
+    background: #EDECEA;
+    padding-top: 50px;
+    min-height: 506px;
+    h2 {
+        font-family: "Poppins", sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    p {
+        font-size: 18px;
+    }
+    .section-popular-content2 {
+        .section-popular-travel {
+            .card-travel {
+                min-height: 360px;
+                background-color: #fff;
+                border-radius: 5px;
+                color: #fff;
+                padding: 25px 30px 0;
+                background-size: cover;
+                margin-bottom: 20px;
+            }
+            .travel-country {
+                font-size: 18px;
+                color: #fff;
+            }
+            .travel-location {
+                font-size: 26px;
+                color: #fff;
+            }
+            img {
+                max-width: 100%;
+                margin: 0 auto 0 auto;
+                border: 1px solid #707070;
+            }
+            h2 {
+                padding-top: 10px;
+                font-family: "Assistant", sans-serif;
+                font-weight: 600;
+                color: #071c4d;
+                font-size: 25px;
+            }
+            hr {
+                color: #000;
+                width: 100%;
+            }
+            .testimonial {
+                font-weight: 200;
+                font-size: 23px;
+                color: #6e6e6e;
+            }
+            .trip-to {
+                margin-top: auto;
+                font-family: "Al Bayan";
+                font-weight: bold;
+                font-size: 20px;
+                background-color: #ff9e53;
+                border-radius: 5px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+//Detail Toko - 1 
+.header3 {
+    padding: 300px 0 245px;
+    margin-top: -70px;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+}
+
+.section-testimonial-heading3 {
+    background: linear-gradient(#fff 0%, #f7f9ff 100%);
+    padding-top: 50px;
+    min-height: 506px;
+    h2 {
+        font-family: "Poppins", sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    p {
+        font-family: "Poppins", sans-serif;
+        font-weight: normal;
+        font-size: 18px;
+        color: #071c4d;
+    }
+}
+
+.section-testimonial-content3 {
+    margin-top: -300px;
+    padding-bottom: 50px;
+    .card-testimonial {
+        padding: 40px 20px 10px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        .testimonial-content {
+            min-height: 380px;
+            h3 {
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                font-size: 22px;
+            }
+            .testimonial {
+                font-family: "Poppins", sans-serif;
+                font-weight: normal;
+                font-size: 22px;
+                color: #a6a6a6;
+            }
+            hr {
+                margin-right: -20px;
+                margin-left: -20px;
+            }
+        }
+        .trip-to {
+            font-family: Assistant;
+            font-weight: normal;
+            font-size: 22px;
+            color: #6e6e6e;
+        }
+    }
+}
+
+.section-testimonial-content4 {
+    margin-top: -300px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    .card-testimonial {
+        padding: 40px 20px 10px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        .testimonial-content {
+            min-height: 380px;
+            h3 {
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                font-size: 22px;
+            }
+            .testimonial {
+                font-family: "Poppins", sans-serif;
+                font-weight: normal;
+                font-size: 22px;
+                color: #a6a6a6;
+            }
+            hr {
+                margin-right: -20px;
+                margin-left: -20px;
+            }
+        }
+        .trip-to {
+            font-family: Assistant;
+            font-weight: normal;
+            font-size: 22px;
+            color: #6e6e6e;
+        }
+    }
+}
+
+//Form
+.section-details-header2 {
+    min-height: 310px;
+    background: #e4e6eb;
+    margin-top: -70px;
+}
+
+.section-details-content2 {
+    margin-top: -210px;
+    min-height: 60vh;
+    .card-details {
+        padding: 30px;
+        border-radius: 11px;
+    }
+    .btn-submit {
+        background-color: #ff9e53;
+        color: #fff;
+        &:hover {
+            background-color: #fbad71;
+            columns: #fff;
+        }
+    }
+    .option-login {
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+//Footer
+.section-footer {
+    h5,
+    a {
+        color: #90231C;
+    }
+}
+
+//Details
+.section-details-header {
+    min-height: 310px;
+    background: #e4e6eb;
+    margin-top: -70px;
+}
+
+.section-details-content {
+    margin-top: -210px;
+    min-height: 100vh;
+    .breadcrumb {
+        background-color: transparent;
+        padding: 0;
+        margin-bottom: 30px;
+        .breadcrumb-item {
+            &.active {
+                font-weight: bold;
+                color: #071c4d;
+            }
+        }
+    }
+    .card-details {
+        padding: 30px;
+        border-radius: 11px;
+        h1 {
+            font-size: 26px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        p {
+            font-family: "Poppins", sans-serif;
+            font-weight: normal;
+            font-size: 14px;
+            color: #e4e6eb;
+        }
+        h3 {
+            font-weight: 300;
+            font-size: 14px;
+            color: #071c4d;
+        }
+        .trip-information {
+            th {
+                font-weight: 300;
+                font-size: 18px;
+                color: #071c4d;
+            }
+            td {
+                font-weight: 300;
+                font-size: 18px;
+                color: #b1b1b1;
+            }
+            .text-blue {
+                color: #071c4d;
+                font-weight: bold;
+            }
+            .text-orange {
+                color: #FF9E53;
+                font-weight: bold;
+            }
+        }
+        .payment-instructions {
+            font-weight: 300;
+            font-size: 14px;
+            color: #b1b1b1;
+        }
+        .bank {
+            .bank-item {
+                h3 {
+                    font-size: 18px;
+                    color: #071c4d;
+                    margin-bottom: 0;
+                }
+                p {
+                    margin-bottom: 0;
+                }
+                .description {
+                    margin-left: 10px;
+                    overflow: hidden;
+                    float: left;
+                    p {
+                        font-weight: normal;
+                        font-size: 16px;
+                        color: #071c4d;
+                    }
+                }
+            }
+            .bank-image {
+                width: 45px;
+                height: 45px;
+                float: left;
+            }
+        }
+        .disclaimer {
+            font-weight: 300;
+            font-size: 14px;
+            color: #b1b1b1;
+        }
+        .gj-datepicker {
+            .datepicker {
+                border-right: 0;
+            }
+            .input-group-append {
+                .btn {
+                    padding-right: 30px;
+                }
+            }
+        }
+        .btn-add-now {
+            background-color: #071c4d;
+            color: #fff;
+            &:hover {
+                background-color: #183886;
+            }
+        }
+    }
+    .card-right {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom: 0;
+    }
+    .features {
+        margin-top: 20px;
+        h3 {
+            font-size: 18px;
+            color: #071c4d;
+            margin-bottom: 0;
+        }
+        p {
+            margin-bottom: 0;
+        }
+        .description {
+            margin-left: 10px;
+            overflow: hidden;
+            float: left;
+        }
+        .features-image {
+            width: 45px;
+            height: 45px;
+            float: left;
+        }
+    }
+    .gallery {
+        .xzoom-container {
+            display: block;
+        }
+        .xzoom {
+            width: 100%;
+            box-shadow: none;
+            margin-bottom: 10px;
+        }
+        .xactive {
+            border: 4px solid #1abc9c;
+            box-shadow: none;
+        }
+    }
+}
+
+.member {
+    .member-image {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.join-container {
+    margin-top: -16px;
+    .btn-join-now {
+        background-color: #DAC971;
+        color: #fff;
+        border-radius: 0;
+        &:hover {
+            background-color: #EBDC89;
+            color: #fff;
+        }
+    }
+}
+
+.section-success {
+    height: 90vh;
+    h1 {
+        font-weight: 600;
+        color: #071c4d;
+        font-size: 24px;
+    }
+    p {
+        font-weight: 300;
+        font-size: 18px;
+        color: #b1b1b1;
+    }
+    .btn-home-page {
+        border-radius: 4px;
+        background-color: #071c4d;
+        color: #fff;
+        &:hover {
+            background-color: #2a488e;
+            color: #fff;
+        }
+    }
+}
