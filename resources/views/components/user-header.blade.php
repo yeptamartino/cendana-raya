@@ -6,7 +6,7 @@
                 <div class="col-md-7">
                     <!-- Start Contact Info -->
                     <ul class="contact-details">
-                        <li><a href="#"><i class="fa fa-map-marker"></i> House-54/A, London, UK</a>
+                        <li><a href="#"><i class="fa fa-map-marker"></i> Jalan Bungur 1 No. 34 RT/RW 006/007 Harjomukti, Depok 16454</a>
                         </li>
                         <li><a href="#"><i class="fa fa-envelope-o"></i> annisa@cendanarayaaviation.com</a>
                         </li>

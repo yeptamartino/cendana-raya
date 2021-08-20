@@ -8,7 +8,7 @@
             </button>
             <!-- End Toggle Nav Link For Mobiles -->
             <a class="navbar-brand" href="index.html" style="max-width: 3px">
-                <img alt="" src="images/margo.jpg">
+                {{-- <img alt="" src="images/margo.jpg"> --}}
             </a>
         </div>
         <div class="navbar-collapse collapse">
