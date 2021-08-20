@@ -74,7 +74,7 @@
     <div id="container">
 
         <!-- Start Header Section -->
-       <x-user-header></x-user-header>
+        <x-user-header></x-user-header>
         <!-- End Header Section -->
 
 
@@ -83,18 +83,131 @@
 
 
         <!-- Start Footer Section -->
+
         <footer>
             <div class="container">
                 <div class="row footer-widgets">
 
 
-              
+                    <!-- Start Subscribe & Social Links Widget -->
+                    <div class="col-md-3 col-xs-12">
+                        <div class="footer-widget mail-subscribe-widget">
+                            <h4>PT Cendana Raya Aviation<span class="head-line"></span></h4>
+                            <p>PT Cendana Raya Aviation is aircraft parts supplier in Indonesia. Military, commercial and private aircraft. Cendana Raya Aviation has exceeded the expectation of its customers in terms of quality, services and the products it supplies. </p>
+
+                        </div>
+                        <div class="footer-widget social-widget">
+                            <h4>Follow Us<span class="head-line"></span></h4>
+                            <ul class="social-icons">
+                                <li>
+                                    <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a class="google" href="#"><i class="fa fa-youtube"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+                                </li>
+                                <li>
+                                    <a class="linkdin" href="#"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a class="flickr" href="#"><i class="fa fa-flickr"></i></a>
+                                </li>
+                                <li>
+                                    <a class="tumblr" href="#"><i class="fa fa-tumblr"></i></a>
+                                </li>
+                                <li>
+                                    <a class="instgram" href="#"><i class="fa fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a class="vimeo" href="#"><i class="fa fa-vimeo-square"></i></a>
+                                </li>
+                                <li>
+                                    <a class="skype" href="#"><i class="fa fa-skype"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- .col-md-3 -->
+                    <!-- End Subscribe & Social Links Widget -->
+
+
+                    <!-- Start Twitter Widget -->
+                    <div class="col-md-3 col-xs-12">
+                        <div class="footer-widget contact-widget">
+                            <h4>Contact Us<span class="head-line"></span></h4>
+                            <ul>
+                                <li><span style="color: orange">Address :</span> Jalan Bungur 1 No. 34 RT/RW 006/007 Harjomukti, Depok 16454</li>
+                                <li><span style="color: orange">Phone Number :</span> +62-812-1939-7519</li>
+                                <li><span style="color: orange">Email :</span> alex@cendanarayaaviation.com</li>
+                                <li><span style="color: orange">Web :</span> www.cendanarayaaviation.com</li>
+                              </ul>
+                        </div>
+                    </div>
+                    <!-- .col-md-3 -->
+                    <!-- End Twitter Widget -->
+
+
+                    <!-- Start Flickr Widget -->
+                    <div class="col-md-6 col-xs-12">
+                        <div class="footer-widget flickr-widget">
+                            <h4>Location PT Cendana Raya Aviation<span class="head-line"></span></h4>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item"
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15860.206490337561!2d106.886589!3d-6.38734!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa0c0f8f82fb7c3a2!2sCendana%20Raya%20Aviation%2C%20PT.!5e0!3m2!1sid!2sid!4v1629181021631!5m2!1sid!2sid"
+                                    width="1140" height="500" style="border:0; responisve" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .col-md-3 -->
+                    <!-- End Flickr Widget -->
+                </div>
+                <!-- .row -->
+
+                <!-- Start Copyright -->
+                <div class="copyright-section">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Copyright © 2016 Margo - Designed &amp; Developed by <a
+                                    href="http://graygrids.com">GrayGrids</a></p>
+                        </div>
+                        <!-- .col-md-6 -->
+                        <div class="col-md-6">
+                            <ul class="footer-nav">
+                                <li><a href="#">Sitemap</a>
+                                </li>
+                                <li><a href="#">Privacy Policy</a>
+                                </li>
+                                <li><a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- .col-md-6 -->
+                    </div>
+                    <!-- .row -->
+                </div>
+                <!-- End Copyright -->
+
+            </div>
+        </footer>
+
+
+        {{-- <footer>
+            <div class="container">
+                <div class="row footer-widgets">
+
                     <div class="col-md-12">
                         <div class="footer-widget flickr-widget">
                             <h4>Location PT Cendana Raya Aviation<span class="head-line"></span></h4>
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15860.206490337561!2d106.886589!3d-6.38734!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa0c0f8f82fb7c3a2!2sCendana%20Raya%20Aviation%2C%20PT.!5e0!3m2!1sid!2sid!4v1629181021631!5m2!1sid!2sid"
-                                width="1140" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15860.206490337561!2d106.886589!3d-6.38734!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa0c0f8f82fb7c3a2!2sCendana%20Raya%20Aviation%2C%20PT.!5e0!3m2!1sid!2sid!4v1629181021631!5m2!1sid!2sid"
+                                width="1140" height="500" style="border:0; responisve" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
 
                         </div>
                     </div>
@@ -112,22 +225,22 @@
                         <div class="col-md-6">
                             <ul class="footer-nav">
                                 <li><a href="{{ route('user.home') }}">Home</a>
-                                </li>
-                                <li><a href="{{ route('user.about-us') }}">About Us</a>
-                                </li>
-                                <li><a href="{{ route('user.contact-us') }}">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- .col-md-6 -->
-                    </div>
-                    <!-- .row -->
-                </div>
-                <!-- End Copyright -->
+        </li>
+        <li><a href="{{ route('user.about-us') }}">About Us</a>
+        </li>
+        <li><a href="{{ route('user.contact-us') }}">Contact Us</a>
+        </li>
+        </ul>
+    </div>
+    <!-- .col-md-6 -->
+    </div>
+    <!-- .row -->
+    </div>
+    <!-- End Copyright -->
 
-            </div>
-        </footer>
-        <!-- End Footer Section -->
+    </div>
+    </footer> --}}
+    <!-- End Footer Section -->
 
 
     </div>
