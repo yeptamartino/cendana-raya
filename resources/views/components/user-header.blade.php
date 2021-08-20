@@ -6,8 +6,6 @@
                 <div class="col-md-7">
                     <!-- Start Contact Info -->
                     <ul class="contact-details">
-                        <li><a href="#"><i class="fa fa-map-marker"></i> Jalan Bungur 1 No. 34 RT/RW 006/007 Harjomukti, Depok 16454</a>
-                        </li>
                         <li><a href="#"><i class="fa fa-envelope-o"></i> annisa@cendanarayaaviation.com</a>
                         </li>
                         <li><a href="#"><i class="fa fa-phone"></i> +6281219397519</a>
@@ -64,7 +62,7 @@
                 </button>
                 <!-- End Toggle Nav Link For Mobiles -->
                 <a class="navbar-brand" href="index.html">
-                    <img alt="" src="{{asset('user-theme/images/margo.png')}}">
+                    {{-- <img alt="" src="{{asset('user-theme/images/margo.png')}}"> --}}
                 </a>
             </div>
             <div class="navbar-collapse collapse">
