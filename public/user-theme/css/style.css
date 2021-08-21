@@ -1127,7 +1127,6 @@ ul.social-list li:last-child a i {}
 
 .page-banner {
     padding: 30px 0;
-    background: url(user-them/images/slide-02-bg.jpg) center;
     border-bottom: 1px solid #eee;
 }
 
@@ -4511,10 +4510,6 @@ footer a:hover {
 
 .social-widget ul.social-icons li a.skype:hover i {
     background-color: #36C4F3
-}
-
-.contact-widget {
-    background: url(user-them/images/map.png) center bottom no-repeat;
 }
 
 .contact-widget span {

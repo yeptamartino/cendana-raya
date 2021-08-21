@@ -40,7 +40,7 @@
                 <div class="col-md-5">
                     <!-- Start Touch Slider -->
                     <div class="touch-slider" data-slider-navigation="true" data-slider-pagination="true">
-                        <div class="item"><img alt="" src="`"></div>
+                        <div class="item"><img alt="" src="{{asset('user-theme/images/about-01.jpg')}}"></div>
                         <div class="item"><img alt="" src="{{asset('user-theme/images/about-02.jpg')}}"></div>
                         <div class="item"><img alt="" src="{{asset('user-theme/images/about-03.jpg')}}"></div>
                     </div>

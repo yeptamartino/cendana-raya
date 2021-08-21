@@ -7,7 +7,7 @@
                 <i class="fa fa-bars"></i>
             </button>
             <!-- End Toggle Nav Link For Mobiles -->
-            <a class="navbar-brand" href="index.html" style="max-width: 3px">
+            <a class="navbar-brand" href="{{ route('user.home') }}">
                 <img alt="" src="{{asset('user-theme/images/margo.png')}}">
             </a>
         </div>
