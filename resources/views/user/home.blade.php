@@ -48,7 +48,10 @@
             <div class="col-md-7">
 
                 <!-- Classic Heading -->
-                <h4 class="classic-title"><span>Welcome To PT. Cendana Raya Aviation Website</span></h4>
+                <div class="big-title animated fadeInDown delay-01" data-animation="fadeInDown"
+                    data-animation-delay="01">
+                    <h1>Welcome To PT. Cendana Raya Aviation Website</h1>
+                </div>
 
                 <!-- Some Text -->
                 <p class="text-justify">PT Cendana Raya Aviation is aircraft parts supplier in Indonesia.
