@@ -164,6 +164,7 @@
     <div class="container">
         <div class="row">
             <!--Start Clients Carousel-->
+           <div class="col-md-12">
             <div class="our-clients">
                 <div class="clients-carousel custom-carousel touch-carousel navigation-3" data-appeared-items="5"
                     data-navigation="true">
@@ -223,6 +224,7 @@
                     </div>
                 </div>
             </div>
+           </div>
             <!-- End Clients Carousel -->
         </div>
         <!-- .row -->
