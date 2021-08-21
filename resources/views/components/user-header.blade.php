@@ -62,7 +62,7 @@
                 </button>
                 <!-- End Toggle Nav Link For Mobiles -->
                 <a class="navbar-brand" href="index.html">
-                    {{-- <img alt="" src="{{asset('user-theme/images/margo.png')}}"> --}}
+                    <img alt="" src="{{asset('user-theme/images/margo.png')}}">
                 </a>
             </div>
             <div class="navbar-collapse collapse">

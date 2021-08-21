@@ -1,6 +1,6 @@
 @extends('layouts.user-theme')
 @section('content')
-<div class="page-banner" style="padding:40px 0; background: url(user-theme/images/slide-02-bg.jpg) center #f9f9f9;">
+<div class="page-banner" style="padding:40px 0;">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -9,7 +9,7 @@
             </div>
             <div class="col-md-6">
                 <ul class="breadcrumbs">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="{{ route('user.home') }}">Home</a></li>
                     <li>Track Order</li>
                 </ul>
             </div>

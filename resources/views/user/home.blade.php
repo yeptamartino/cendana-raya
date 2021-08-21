@@ -90,130 +90,136 @@
 <!-- Product -->
 <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <!-- Start Portfolio Section -->
-        <div class="section full-width-portfolio" style="border-top:0; border-bottom:0; background:#fff;">
-  
-          <!-- Start Big Heading -->
-          <div class="big-title text-center animated fadeInDown delay-01" data-animation="fadeInDown" data-animation-delay="01">
-            <h1>This is Our Latest <strong>Work</strong></h1>
-          </div>
-          <!-- End Big Heading -->
-  
-          <p class="text-center">PT Cendana Raya Aviation is aircraft parts supplier in Indonesia. Military, commercial and private aircraft. Cendana Raya Aviation has exceeded the expectation of its customers in terms of quality, services and the products it supplies.</p>
-  
-  
-            <!-- Start Recent Projects Carousel -->
-            <ul id="portfolio-list" data-animated="fadeIn">
-              
-              <li>
-                <img src="{{asset('user-theme/images/products/sperpat-3.jpg')}}" alt="">
-                <div class="portfolio-item-content">
-                  <span class="header">Town winter 2016</span>
-                  <p class="body animated8">web develpment, design</p>
+        <div class="col-md-12">
+            <!-- Start Portfolio Section -->
+            <div class="section full-width-portfolio" style="border-top:0; border-bottom:0; background:#fff;">
+
+                <!-- Start Big Heading -->
+                <div class="big-title text-center animated fadeInDown delay-01" data-animation="fadeInDown"
+                    data-animation-delay="01">
+                    <h1>PT Cendana Raya Aviation is aircraft parts supplier in Indonesia</h1>
                 </div>
-                <div class="icon-list">
-                  <a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-                  <a class="zoom lightbox" href="{{asset('user-theme/images/products/sperpat-3.jpg')}}"><i class="fa fa-search-plus"></i></a>
-                </div> 
-              </li>
-  
-              <li>
-                <img src="{{asset('user-theme/images/products/sperpat-4.jpg')}}" alt="">
-                <div class="portfolio-item-content">
-                  <span class="header">Quarterly Musashino</span>
-                  <p class="body">web develpment, design</p>
-                </div>
-                <div class="icon-list">
-                  <a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-                  <a class="zoom lightbox" href="{{asset('user-theme/images/products/sperpat-4.jpg')}}"><i class="fa fa-search-plus"></i></a>
-                </div> 
-              </li>
-              <li>
-                <img src="{{asset('user-theme/images/products/sperpat-5.jpg')}}" alt="">
-                <div class="portfolio-item-content">
-                  <span class="header">Mainichi April 2016</span>
-                  <p class="body">web develpment, design</p>
-                </div>
-                <div class="icon-list">
-                  <a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
-                  <a class="zoom lightbox" href="{{asset('user-theme/images/products/sperpat-5.jpg')}}"><i class="fa fa-search-plus"></i></a>
-                </div> 
-              </li>
-            </ul>
-  
-            <!-- End Recent Projects Carousel -->
-  
-  
-          </div>
+                <!-- End Big Heading -->
+
+                <p class="text-center">PT Cendana Raya Aviation is aircraft parts supplier in Indonesia. Military,
+                    commercial and private aircraft. Cendana Raya Aviation has exceeded the expectation of its customers
+                    in terms of quality, services and the products it supplies.</p>
+
+
+                <!-- Start Recent Projects Carousel -->
+                <ul id="portfolio-list" data-animated="fadeIn">
+
+                    <li>
+                        <img src="{{asset('user-theme/images/products/sperpat-3.jpg')}}" alt="">
+                        <div class="portfolio-item-content">
+                            <span class="header">Town winter 2016</span>
+                            <p class="body animated8">web develpment, design</p>
+                        </div>
+                        <div class="icon-list">
+                            <a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
+                            <a class="zoom lightbox" href="{{asset('user-theme/images/products/sperpat-3.jpg')}}"><i
+                                    class="fa fa-search-plus"></i></a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="{{asset('user-theme/images/products/sperpat-4.jpg')}}" alt="">
+                        <div class="portfolio-item-content">
+                            <span class="header">Quarterly Musashino</span>
+                            <p class="body">web develpment, design</p>
+                        </div>
+                        <div class="icon-list">
+                            <a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
+                            <a class="zoom lightbox" href="{{asset('user-theme/images/products/sperpat-4.jpg')}}"><i
+                                    class="fa fa-search-plus"></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="{{asset('user-theme/images/products/sperpat-5.jpg')}}" alt="">
+                        <div class="portfolio-item-content">
+                            <span class="header">Mainichi April 2016</span>
+                            <p class="body">web develpment, design</p>
+                        </div>
+                        <div class="icon-list">
+                            <a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
+                            <a class="zoom lightbox" href="{{asset('user-theme/images/products/sperpat-5.jpg')}}"><i
+                                    class="fa fa-search-plus"></i></a>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- End Recent Projects Carousel -->
+
+
+            </div>
         </div>
         <div class="col-md-4">
-  
+
         </div>
-      </div>
     </div>
+</div>
 <!-- End Product -->
 
-
-<!-- Partner -->
 <div class="partner">
     <div class="container">
         <div class="row">
-
-            <!-- Start Big Heading -->
-            <div class="big-title text-center">
-                <h1>Our Happy <strong>Products</strong></h1>
-                <p class="title-desc">Partners We Work With</p>
-            </div>
-            <!-- End Big Heading -->
-
             <!--Start Clients Carousel-->
             <div class="our-clients">
-                <div class="clients-carousel custom-carousel touch-carousel navigation-3" data-appeared-items="9"
+                <div class="clients-carousel custom-carousel touch-carousel navigation-3" data-appeared-items="5"
                     data-navigation="true">
-
                     <!-- Client 1 -->
                     <div class="client-item item">
-                        <a href="{{asset('user-theme/images/products/sperpat-1.jpg')}}"><img src="{{asset('user-theme/images/products/sperpat-1.jpg')}}" alt="" /></a>
+                        <a href="{{asset('user-theme/images/products/sperpat-1.jpg')}}">
+                            <img src="{{asset('user-theme/images/products/sperpat-1.jpg')}}" alt="" />
+                        </a>
                     </div>
 
                     <!-- Client 2 -->
                     <div class="client-item item">
-                        <a href="{{asset('user-theme/images/products/sperpat-2.jpg')}}"><img src="{{asset('user-theme/images/products/sperpat-2.jpg')}}" alt="" /></a>
+                        <a href="{{asset('user-theme/images/products/sperpat-2.jpg')}}">
+                            <img src="{{asset('user-theme/images/products/sperpat-2.jpg')}}" alt="" />
+                        </a>
                     </div>
 
                     <!-- Client 3 -->
                     <div class="client-item item">
-                        <a href="{{asset('user-theme/images/products/sperpat-3.jpg')}}"><img src="{{asset('user-theme/images/products/sperpat-3.jpg')}}" alt="" /></a>
+                        <a href="{{asset('user-theme/images/products/sperpat-3.jpg')}}"><img
+                                src="{{asset('user-theme/images/products/sperpat-3.jpg')}}" alt="" /></a>
                     </div>
 
                     <!-- Client 4 -->
                     <div class="client-item item">
-                        <a href="{{asset('user-theme/images/products/sperpat-4.jpg')}}"><img src="{{asset('user-theme/images/products/sperpat-4.jpg')}}" alt="" /></a>
+                        <a href="{{asset('user-theme/images/products/sperpat-4.jpg')}}"><img
+                                src="{{asset('user-theme/images/products/sperpat-4.jpg')}}" alt="" /></a>
                     </div>
 
                     <!-- Client 5 -->
                     <div class="client-item item">
-                        <a href="{{asset('user-theme/images/products/sperpat-5.jpg')}}"><img src="{{asset('user-theme/images/products/sperpat-5.jpg')}}" alt="" /></a>
+                        <a href="{{asset('user-theme/images/products/sperpat-5.jpg')}}"><img
+                                src="{{asset('user-theme/images/products/sperpat-5.jpg')}}" alt="" /></a>
                     </div>
 
                     <!-- Client 6 -->
                     <div class="client-item item">
-                        <a href="{{asset('user-theme/images/products/sperpat-6.jpg')}}"><img src="{{asset('user-theme/images/products/sperpat-6.jpg')}}" alt="" /></a>
+                        <a href="{{asset('user-theme/images/products/sperpat-6.jpg')}}"><img
+                                src="{{asset('user-theme/images/products/sperpat-6.jpg')}}" alt="" /></a>
                     </div>
 
                     <!-- Client 7 -->
                     <div class="client-item item">
-                        <a href="{{asset('user-theme/images/products/sperpat-7.jpg')}}"><img src="{{asset('user-theme/images/products/sperpat-7.jpg')}}" alt="" /></a>
+                        <a href="{{asset('user-theme/images/products/sperpat-7.jpg')}}"><img
+                                src="{{asset('user-theme/images/products/sperpat-7.jpg')}}" alt="" /></a>
                     </div>
 
                     <!-- Client 8 -->
                     <div class="client-item item">
-                        <a href="{{asset('user-theme/images/products/sperpat-8.jpg')}}"><img src="{{asset('user-theme/images/products/sperpat-8.jpg')}}" alt="" /></a>
+                        <a href="{{asset('user-theme/images/products/sperpat-8.jpg')}}"><img
+                                src="{{asset('user-theme/images/products/sperpat-8.jpg')}}" alt="" /></a>
                     </div>
                     <!-- Client 9 -->
                     <div class="client-item item">
-                        <a href="{{asset('user-theme/images/products/sperpat-9.jpg')}}"><img src="{{asset('user-theme/images/products/sperpat-9.jpg')}}" alt="" /></a>
+                        <a href="{{asset('user-theme/images/products/sperpat-9.jpg')}}"><img
+                                src="{{asset('user-theme/images/products/sperpat-9.jpg')}}" alt="" /></a>
                     </div>
                 </div>
             </div>
