@@ -20,7 +20,7 @@
 				<div class="invalid-feedback">{{$message}}</div>
 				@enderror
 			</div>
-			<img src="{{asset('images',$setting->logo)}}" alt="">
+			<img src="{{url($setting->logo)}}" alt="">
 		</div>
 
 

@@ -48,36 +48,44 @@
             </li>
             <li class="{{ Request::is('about-us','admin/about-us/create') ? 'active' : '' }}">
                 <a href="{{route('about-us.index')}}" class="waves-effect waves-dark">
-                    <span class="pcoded-micon"><i class="fa fa-paper-plane"></i><b>About Us</b></span>
+                    <span class="pcoded-micon"><i class="fa fa-users"></i><b>About Us</b></span>
                     <span class="pcoded-mtext">About Us</span>
                     <span class="pcoded-mcaret"></span>
                 </a>
             </li>
 
-            <li class="{{ Request::is('about-us','admin/about-us/create') ? 'active' : '' }}">
-                <a href="{{route('about-us.index')}}" class="waves-effect waves-dark">
-                    <span class="pcoded-micon"><i class="fa fa-paper-plane"></i><b>Capability</b></span>
+            <li class="{{ Request::is('admin/slider','admin/slider/create') ? 'active' : '' }}">
+                <a href="{{route('slider.index')}}" class="waves-effect waves-dark">
+                    <span class="pcoded-micon"><i class="fa fa-sliders"></i><b>Slider</b></span>
+                    <span class="pcoded-mtext">Slider</span>
+                    <span class="pcoded-mcaret"></span>
+                </a>
+            </li>
+
+            <li class="{{ Request::is('admin/capability/','admin/capability/create') ? 'active' : '' }}">
+                <a href="{{route('capability.index')}}" class="waves-effect waves-dark">
+                    <span class="pcoded-micon"><i class="fa fa-deaf"></i><b>Capability</b></span>
                     <span class="pcoded-mtext">Capability</span>
                     <span class="pcoded-mcaret"></span>
                 </a>
             </li>
-            <li class="{{ Request::is('about-us','admin/about-us/create') ? 'active' : '' }}">
-                <a href="{{route('about-us.index')}}" class="waves-effect waves-dark">
-                    <span class="pcoded-micon"><i class="fa fa-paper-plane"></i><b>Inventory</b></span>
+            <li class="{{ Request::is('admin/inventory/','admin/inventory/create') ? 'active' : '' }}">
+                <a href="{{route('inventory.index')}}" class="waves-effect waves-dark">
+                    <span class="pcoded-micon"><i class="fa fa-database"></i><b>Inventory</b></span>
                     <span class="pcoded-mtext">Inventory</span>
                     <span class="pcoded-mcaret"></span>
                 </a>
             </li>
-            <li class="{{ Request::is('about-us','admin/about-us') ? 'active' : '' }}">
-                <a href="{{route('about-us.index')}}" class="waves-effect waves-dark">
-                    <span class="pcoded-micon"><i class="fa fa-paper-plane"></i><b>Track Order</b></span>
+            <li class="{{ Request::is('admin/track-order','admin/track-order') ? 'active' : '' }}">
+                <a href="{{route('track-order.index')}}" class="waves-effect waves-dark">
+                    <span class="pcoded-micon"><i class="fa fa-map-pin"></i><b>Track Order</b></span>
                     <span class="pcoded-mtext">Track Order</span>
                     <span class="pcoded-mcaret"></span>
                 </a>
             </li>
-            <li class="{{ Request::is('about-us','admin/about-us/create') ? 'active' : '' }}">
-                <a href="{{route('about-us.index')}}" class="waves-effect waves-dark">
-                    <span class="pcoded-micon"><i class="fa fa-paper-plane"></i><b>Contact Us</b></span>
+            <li class="{{ Request::is('admin/contact-us/','admin/contact-us/create') ? 'active' : '' }}">
+                <a href="{{route('contact-us.index')}}" class="waves-effect waves-dark">
+                    <span class="pcoded-micon"><i class="fa fa-phone"></i><b>Contact Us</b></span>
                     <span class="pcoded-mtext">Contact Us</span>
                     <span class="pcoded-mcaret"></span>
                 </a>
@@ -112,7 +120,7 @@
             <li class="{{ Request::is('calon-peserta','calon-peserta/create') ? 'active' : '' }}">
                 <a href="{{route('calon-peserta.index')}}" class="waves-effect waves-dark">
                     <span class="pcoded-micon"><i class="fa fa-user"></i><b>Users</b></span>
-                    <span class="pcoded-mtext">Users  <label class="badge badge-warning">{{ $total_candidates }}</label></span>
+                    <span class="pcoded-mtext">Users  <label class="badge badge-warning"></span>
                     <span class="pcoded-mcaret"></span>
                 </a>
             </li>

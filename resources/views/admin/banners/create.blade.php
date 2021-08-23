@@ -2,10 +2,10 @@
 @section('content')
 <div class="card">
     <div class="card-header">
-        <h5>Tambah Banner</h5>
+        <h5>Tambah Slider</h5>
     </div>
     <div class="card-block">
-        <form method="post" action="{{url('banner')}}" enctype="multipart/form-data">
+        <form method="post" action="{{url('admin/slider')}}" enctype="multipart/form-data">
             @csrf
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Foto</label>
@@ -47,7 +47,7 @@
 
            
             <div class="form-group pull-right">
-                <a href="{{route('banner.index')}}" class="btn btn-success btn-outline-success btn-sm">Kembali</a>
+                <a href="{{route('slider.index')}}" class="btn btn-success btn-outline-success btn-sm">Kembali</a>
                 <button type="submit" class="btn btn-primary btn-sm">Simpan</button>
             </div>
         </form>

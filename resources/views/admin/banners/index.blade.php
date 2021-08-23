@@ -2,10 +2,10 @@
 @section('content')
 @include('sweetalert::alert')
 <div class="card-header">
-    <h5>Daftar Bannner</h5>
+    <h5>Daftar Slider</h5>
     <div class="card-header-right">
         <ul class="list-unstyled card-option">
-            <li><a href="{{route('banner.create')}}"><i class="fa fa-plus" title="Tambah Banner"></i></a></li>
+            <li><a href="{{route('slider.create')}}"><i class="fa fa-plus" title="Tambah Banner"></i></a></li>
         </ul>
     </div>
 </div>
@@ -26,7 +26,7 @@
                 @foreach($banners as $banner)
                 <tr>
                     <td>{{ $loop->iteration }}</td>
-                    <td><img class="img img-responsive" src="{{url($banner->thumbnail)}}" style="width:10em;"></td>
+                    <td><img class="img img-responsive" src="{{asset('images/'.$banner->thumbnail)}}" style="width:10em;"></td>
                     <td>{{ $banner->title }}</td>
                     <td>{!! $banner->description !!}</td>
                     <td>
@@ -58,9 +58,9 @@
                             </button>
                         </form>
                         @endif
-                        <a href="{{url('banner',$banner->id)}}" class="btn btn-primary btn-mini"><i class="fa fa-eye"title="Detail"></i></a>
-                        <a href="{{url('banner',$banner->id)}}/edit" class="btn btn-warning btn-mini"><i class="fa fa-edit" title="Edit"></i></a>
-                        <form action="{{ url('banner', ['id' => $banner->id]) }}" method="post" class="d-inline">
+                        <a href="{{url('admin/slider',$banner->id)}}" class="btn btn-primary btn-mini"><i class="fa fa-eye"title="Detail"></i></a>
+                        <a href="{{url('admin/slider',$banner->id)}}/edit" class="btn btn-warning btn-mini"><i class="fa fa-edit" title="Edit"></i></a>
+                        <form action="{{ url('admin/slider', ['id' => $banner->id]) }}" method="post" class="d-inline">
                             @method('delete')
                             @csrf
                             <button type="submit" class="btn btn-danger btn-mini"

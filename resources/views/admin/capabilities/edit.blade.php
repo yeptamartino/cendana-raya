@@ -2,19 +2,19 @@
 @section('content')
 <div class="card">
     <div class="card-header">
-        <h5>Edit About Us</h5>
+        <h5>Edit Capability</h5>
     </div>
     <div class="card-block">
-	<form method="post" action="{{url('about-us',$article->id)}}" enctype="multipart/form-data">
+	<form method="post" action="{{url('admin/capability',$capability->id)}}" enctype="multipart/form-data">
 		@csrf
 		@method('patch')
 		<div class="form-group row">
 			<label class="col-sm-2 col-form-label">Foto</label>
 			<div class="col-sm-10">
-				<img class="img img-responsive" src="{{url($article->thumbnail)}}" style="width:10em; padding-bottom:1em">
+				<img class="img img-responsive" src="{{url($capability->thumbnail)}}" style="width:10em; padding-bottom:1em">
 				<input type="file" name="thumbnail" class="form-control 
 				@error('thumbnail') is-invalid placeholder
-				@enderror" id="thumbnail" placeholder="Masukkan Nama" value="{{$article->thumbnail}}">
+				@enderror" id="thumbnail" placeholder="Masukkan Nama" value="{{$capability->thumbnail}}">
 				@error('thumbnail')
 				<div class="invalid-feedback">{{$message}}</div>
 				@enderror
@@ -26,7 +26,7 @@
 			<div class="col-sm-10">
 				<input type="text" name="title" class="form-control 
 				@error('title') is-invalid placeholder
-				@enderror" id="title" placeholder="Masukkan Judul" value="{{$article->title}}">
+				@enderror" id="title" placeholder="Masukkan Judul" value="{{$capability->title}}">
 				@error('title')
 				<div class="invalid-feedback">{{$message}}</div>
 				@enderror
@@ -40,7 +40,7 @@
 					@error('description') is invalid  @enderror"
 					value="{{old('description')}}" 
 					placeholder="Masukkan Deskripsi" id="description"
-					name="description" cols="10" rows="10">{{ $article->description }}</textarea>
+					name="description" cols="10" rows="10">{{ $capability->description }}</textarea>
 					
 					@error('description')
 					<div class="invalid-feedback">{{$message}}</div>
@@ -51,7 +51,7 @@
 		
 	   
 		<div class="form-group pull-right">
-			<a href="{{route('about-us.index')}}" class="btn btn-success btn-outline-success btn-sm">Kembali</a>
+			<a href="{{route('capability.index')}}" class="btn btn-success btn-outline-success btn-sm">Kembali</a>
 			<button type="submit" class="btn btn-primary btn-sm">Simpan</button>
 		</div>
 	</form>

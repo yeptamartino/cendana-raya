@@ -2,10 +2,10 @@
 @section('content')
 <div class="card">
     <div class="card-header">
-        <h5>Tambah About Us</h5>
+        <h5>Tambah Capability</h5>
     </div>
     <div class="card-block">
-        <form method="post" action="{{url('capability')}}" enctype="multipart/form-data">
+        <form method="post" action="{{url('admin/capability')}}" enctype="multipart/form-data">
             @csrf
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Foto</label>

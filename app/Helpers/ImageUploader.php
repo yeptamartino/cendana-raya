@@ -58,4 +58,14 @@ class ImageUploader {
         File::delete($image_path);
     }
   }
+  public function uploadPdf($image, $extension) {
+    $image_name = Str::uuid();
+    $filename = $this->BASE_PATH . $image_name . '.' . $extension;
+    $exp = explode(',', $image);
+    $base64 = array_pop($exp);
+    Storage::disk('pdf')->put($filename, base64_decode($base64));
+    $url = Storage::disk('pdf')->url($filename);
+    return $filename;
+    
+  }
 }

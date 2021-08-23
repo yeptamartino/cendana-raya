@@ -5,7 +5,7 @@
         <h5>Tambah About Us</h5>
     </div>
     <div class="card-block">
-        <form method="post" action="{{url('about-us')}}" enctype="multipart/form-data">
+        <form method="POST" action="{{route('about-us')}}" enctype="multipart/form-data">
             @csrf
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Foto</label>

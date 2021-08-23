@@ -2,10 +2,10 @@
 @section('content')
 <div class="card">
     <div class="card-header">
-        <h5>Edit Banner</h5>
+        <h5>Edit Slider</h5>
     </div>
     <div class="card-block">
-	<form method="post" action="{{url('banner',$banner->id)}}" enctype="multipart/form-data">
+	<form method="post" action="{{url('admin/slider',$banner->id)}}" enctype="multipart/form-data">
 		@csrf
 		@method('patch')
 		<div class="form-group row">
@@ -51,7 +51,7 @@
 		
 	   
 		<div class="form-group pull-right">
-			<a href="{{route('banner.index')}}" class="btn btn-success btn-outline-success btn-sm">Kembali</a>
+			<a href="{{route('slider.index')}}" class="btn btn-success btn-outline-success btn-sm">Kembali</a>
 			<button type="submit" class="btn btn-primary btn-sm">Simpan</button>
 		</div>
 	</form>

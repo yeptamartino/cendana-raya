@@ -2,10 +2,10 @@
 @section('content')
 <div class="card">
     <div class="card-header">
-        <h5>Detail Banner</h5>
+        <h5>Detail Slider</h5>
         <div class="card-header-right">
             <ul class="list-unstyled card-option">
-                <li><a href="{{route('banner.index')}}"><i class="fa fa-undo" title="Kembali"></i></a></li>
+                <li><a href="{{route('slider.index')}}"><i class="fa fa-undo" title="Kembali"></i></a></li>
             </ul>
         </div>
     </div>

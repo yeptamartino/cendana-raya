@@ -15,14 +15,14 @@ class InventoryController extends Controller
     
     public function index()
     {
-        $inventorys = Inventory::all();
-        return view('inventories.index',compact('inventorys'));
+        $inventories = Inventory::all();
+        return view('admin.inventories.index',compact('inventories'));
     }
 
 
     public function create()
     {
-        return view('inventories.create');
+        return view('admin.inventories.create');
     }
 
     public function store(Request $request, ImageUploader $imageUploader)
@@ -36,20 +36,20 @@ class InventoryController extends Controller
           $inventory->thumbnail = $imageUploader->saveImage($request, 'thumbnail');
           $inventory->save();
 
-        return redirect('inventory')->with('status', 'success');
+        return redirect('admin/inventory')->with('status', 'success');
 
     }
 
     
     public function show(Inventory $inventory)
     {
-        return view('inventories.show', compact('inventory'));
+        return view('admin.inventories.show', compact('inventory'));
     }
 
   
     public function edit(Inventory $inventory)
     {
-        return view('inventories.edit',compact('inventory'));
+        return view('admin.inventories.edit',compact('inventory'));
     }
 
   
@@ -63,14 +63,14 @@ class InventoryController extends Controller
             $inventory->thumbnail    = $imageUploader->saveImage($request, 'thumbnail');
           }
         $inventory->save();
-        return redirect('inventory')->with('status', 'Inventory updated');
+        return redirect('admin/inventory')->with('status', 'Inventory updated');
     }
 
    
     public function destroy(Inventory $inventory)
     {
         Inventory::destroy($inventory->id);
-        return redirect('inventory')->with('status', 'Inventory deleted');
+        return redirect('admin/inventory')->with('status', 'Inventory deleted');
 
 
     }

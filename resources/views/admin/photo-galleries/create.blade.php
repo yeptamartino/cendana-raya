@@ -5,7 +5,7 @@
             <h5>Tambah Galeri Foto</h5>
         </div>
         <div class="card-block">
-            <form method="post" action="{{url('photo')}}" enctype="multipart/form-data">
+            <form method="post" action="{{url('admin/photo')}}" enctype="multipart/form-data">
                 @csrf
                 
                 <div class="form-group row">

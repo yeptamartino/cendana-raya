@@ -36,7 +36,7 @@ class TrackOrderController extends Controller
           $track_order->thumbnail = $imageUploader->saveImage($request, 'thumbnail');
           $track_order->save();
 
-        return redirect('track-order')->with('status', 'success');
+        return redirect('admin/track-order')->with('status', 'success');
 
     }
 
@@ -63,14 +63,14 @@ class TrackOrderController extends Controller
             $track_order->thumbnail    = $imageUploader->saveImage($request, 'thumbnail');
           }
         $track_order->save();
-        return redirect('track-order')->with('status', 'TrackOrder updated');
+        return redirect('admin/track-order')->with('status', 'TrackOrder updated');
     }
 
    
     public function destroy(TrackOrder $track_order)
     {
         TrackOrder::destroy($track_order->id);
-        return redirect('track-order')->with('status', 'TrackOrder deleted');
+        return redirect('admin/track-order')->with('status', 'TrackOrder deleted');
 
 
     }

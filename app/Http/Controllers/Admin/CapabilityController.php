@@ -15,8 +15,8 @@ class CapabilityController extends Controller
     
     public function index()
     {
-        $capabilitys = Capability::all();
-        return view('admin.capabilities.index',compact('capabilitys'));
+        $capabilities = Capability::all();
+        return view('admin.capabilities.index',compact('capabilities'));
     }
 
 
@@ -36,7 +36,7 @@ class CapabilityController extends Controller
           $capability->thumbnail = $imageUploader->saveImage($request, 'thumbnail');
           $capability->save();
 
-        return redirect('capability')->with('status', 'success');
+        return redirect('admin/capability')->with('status', 'success');
 
     }
 
@@ -63,14 +63,14 @@ class CapabilityController extends Controller
             $capability->thumbnail    = $imageUploader->saveImage($request, 'thumbnail');
           }
         $capability->save();
-        return redirect('capability')->with('status', 'Capability updated');
+        return redirect('admin/capability')->with('status', 'Capability updated');
     }
 
    
     public function destroy(Capability $capability)
     {
         Capability::destroy($capability->id);
-        return redirect('capability')->with('status', 'Capability deleted');
+        return redirect('admin/capability')->with('status', 'Capability deleted');
 
 
     }

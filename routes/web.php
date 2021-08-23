@@ -14,8 +14,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('admin')->group(function () { 
 
-
-        Route::get('about-us', [App\Http\Controllers\Admin\AboutUsController::class, 'aboutUs'])->name('admin.about-us');
+        Route::resource('about-us', App\Http\Controllers\Admin\AboutUsController::class);
         Route::get('capability', [App\Http\Controllers\Admin\CapabilityController::class, 'capability'])->name('admin.capability');
         Route::get('inventory', [App\Http\Controllers\Admin\InventoryController::class, 'inventory'])->name('admin.inventory');
         Route::get('track-order', [App\Http\Controllers\Admin\TrackOrderController::class, 'trackOrder'])->name('admin.track-order');
@@ -28,15 +27,18 @@ Route::prefix('admin')->group(function () {
         Route::get('/news/detail',[HomeController::class,'detailArtikel'])->name('news.detail');
         
         Route::resource('admin', App\Http\Controllers\Admin\AdminController::class);
-        Route::resource('banner', App\Http\Controllers\Admin\BannerController::class);
+        Route::resource('slider', App\Http\Controllers\Admin\BannerController::class);
         Route::resource('category', App\Http\Controllers\Admin\ProductCategoryController::class);
+        Route::resource('capability', App\Http\Controllers\Admin\CapabilityController::class);
+        Route::resource('inventory', App\Http\Controllers\Admin\InventoryController::class);
+        Route::resource('track-order', App\Http\Controllers\Admin\TrackOrderController::class);
         Route::resource('product', App\Http\Controllers\Admin\ProductController::class);
+        Route::resource('contact-us', App\Http\Controllers\Admin\ContactUsController::class);
         Route::resource('about-us', App\Http\Controllers\Admin\ArticleController::class);
         Route::resource('pengumuman', App\Http\Controllers\Admin\AnnouncementController::class);
         Route::resource('video', App\Http\Controllers\Admin\VideoGalleryController::class);
         Route::resource('photo', App\Http\Controllers\Admin\PhotoGalleryController::class);
         Route::resource('calon-peserta', App\Http\Controllers\Admin\CandidateController::class);
-        Route::resource('boking', App\Http\Controllers\Admin\BookingDayController::class);
         Route::resource('profile', App\Http\Controllers\Admin\ProfileController::class);
         Route::resource('registrasi-peserta', App\Http\Controllers\Admin\RegisterController::class);
      

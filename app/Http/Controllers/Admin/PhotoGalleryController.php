@@ -36,7 +36,7 @@ class PhotoGalleryController extends Controller
           $photo->thumbnail = $imageUploader->saveImage($request, 'thumbnail');
           $photo->save();
 
-        return redirect('photo')->with('status', 'success');
+        return redirect('admin/photo')->with('status', 'success');
 
     }
 
@@ -63,14 +63,14 @@ class PhotoGalleryController extends Controller
             $photo->thumbnail    = $imageUploader->saveImage($request, 'thumbnail');
           }
         $photo->save();
-        return redirect('photo')->with('status', 'PhotoGallery updated');
+        return redirect('admin/photo')->with('status', 'PhotoGallery updated');
     }
 
    
     public function destroy(PhotoGallery $photo)
     {
         PhotoGallery::destroy($photo->id);
-        return redirect('photo')->with('status', 'PhotoGallery deleted');
+        return redirect('admin/photo')->with('status', 'PhotoGallery deleted');
 
 
     }

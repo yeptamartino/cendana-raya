@@ -32,8 +32,13 @@ return [
 
         'image' => [
             'driver' => 'local',
-            'root' => storage_path('app/public/images'),
-            'url' => env('APP_URL').'/storage/images',
+            'root' => storage_path('settings'),
+            'url' => env('APP_URL').'/storage/settings',
+        ],
+        'pdf' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/pdf'),
+            'url' => env('APP_URL').'/storage/pdf',
         ],
 
         'local' => [

@@ -2,10 +2,10 @@
 @section('content')
 <div class="card">
     <div class="card-header">
-        <h5>Tambah About Us</h5>
+        <h5>Tambah Track Order</h5>
     </div>
     <div class="card-block">
-        <form method="post" action="{{url('about-us')}}" enctype="multipart/form-data">
+        <form method="post" action="{{url('admin/track-order')}}" enctype="multipart/form-data">
             @csrf
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Foto</label>
@@ -47,7 +47,7 @@
 
            
             <div class="form-group pull-right">
-                <a href="{{route('about-us.index')}}" class="btn btn-success btn-outline-success btn-sm">Kembali</a>
+                <a href="{{route('track-order.index')}}" class="btn btn-success btn-outline-success btn-sm">Kembali</a>
                 <button type="submit" class="btn btn-primary btn-sm">Simpan</button>
             </div>
         </form>

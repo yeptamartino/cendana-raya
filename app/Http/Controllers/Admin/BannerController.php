@@ -36,17 +36,11 @@ class BannerController extends Controller
         $banner->title = $request->title;
         $banner->description = $request->description;
         $banner->status = Constants::$BANNER_PUBLISH;
-        if($request->file('thumbnail')){
-            $image_path = $request->file('thumbnail')->path();
-            $extension = $request->file('thumbnail')->extension();
-            $image = base64_encode(file_get_contents($image_path));
-            $image_url = $imageUploader->upload($image, $extension);
-            $banner->thumbnail = $image_url;
-            }
+        $banner->thumbnail = $imageUploader->saveImage($request, 'thumbnail');
         Alert::toast('Banner berhasil di tambahkan','success');
         $banner->save();
 
-        return redirect('banner')->with('status', 'success');
+        return redirect('admin/slider')->with('status', 'success');
 
     }
 
@@ -72,16 +66,12 @@ class BannerController extends Controller
         $banner->title = $request->title;
         $banner->description = $request->description;
         $banner->status = Constants::$BANNER_PUBLISH;
-        if($request->file('thumbnail')){
-            $image_path = $request->file('thumbnail')->path();
-            $extension = $request->file('thumbnail')->extension();
-            $image = base64_encode(file_get_contents($image_path));
-            $image_url = $imageUploader->upload($image, $extension);
-            $banner->thumbnail = $image_url;
-            }
+        if($request->file('thumbnail')) {
+            $banner->thumbnail    = $imageUploader->saveImage($request, 'thumbnail');
+          }
         Alert::toast('Banner berhasil di update','success');
         $banner->save();
-        return redirect('banner')->with('status', 'Banner updated');
+        return redirect('admin/slider')->with('status', 'Banner updated');
     }
 
     public function draft($id, Request $request)
@@ -106,7 +96,7 @@ class BannerController extends Controller
     public function destroy(Banner $banner)
     {
         Banner::destroy($banner->id);
-        return redirect('banner')->with('status', 'Banner deleted');
+        return redirect('admin/slider')->with('status', 'Banner deleted');
 
 
     }

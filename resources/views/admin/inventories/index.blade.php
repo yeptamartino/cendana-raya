@@ -2,10 +2,10 @@
 @section('content')
 @include('sweetalert::alert')
 <div class="card-header">
-    <h5>About Us</h5>
+    <h5>Inventory</h5>
     <div class="card-header-right">
         <ul class="list-unstyled card-option">
-            <li><a href="{{route('about-us.create')}}"><i class="fa fa-plus" title="Tambah About Us"></i></a></li>
+            <li><a href="{{route('inventory.create')}}"><i class="fa fa-plus" title="Tambah About Us"></i></a></li>
         </ul>
     </div>
 </div>
@@ -23,15 +23,15 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach($articles as $article)
+                @foreach($inventories as $inventory)
                 <tr>
                     <td>{{ $loop->iteration }}</td>
-                    <td><img class="img img-responsive" src="{{url($article->thumbnail)}}" style="width:10em;"></td>
-                    <td>{{ $article->title }}</td>
-                    <td>{!! $article->description !!}</td>
+                    <td><img class="img img-responsive" src="{{asset('images/'.$inventory->thumbnail)}}" style="width:10em;"></td>
+                    <td>{{ $inventory->title }}</td>
+                    <td>{!! $inventory->description !!}</td>
                     <td>
                         
-                       @if ($article->status == 'DRAFT')
+                       @if ($inventory->status == 'DRAFT')
                           <label class="label label-inverse-info">DRAFT</label>
                        @else
                           <label class="label label-inverse-success">PUBLISH</label>                      
@@ -39,32 +39,32 @@
                     </td>
                     <td>
                         
-                        @if($article->status == 'PUBLISH')
-                        <form action="{{ url('about-us/draft', ['id' => $article->id]) }}" method="POST" style="display: inline-block;">
+                        @if($inventory->status == 'PUBLISH')
+                        <form action="{{ url('about-us/draft', ['id' => $inventory->id]) }}" method="POST" style="display: inline-block;">
                             @method('put')
                             @csrf
-                            <button type="submit" class="btn btn-info btn-mini" onclick="return confirm('Draft {{$article->title}} ?')">
+                            <button type="submit" class="btn btn-info btn-mini" onclick="return confirm('Draft {{$inventory->title}} ?')">
                                <i class="fa fa-bookmark" title="Draft"></i>
                             </button>
                         </form>
 
                         @else
 
-                        <form action="{{ url('about-us/publish', ['id' => $article->id]) }}" method="POST" style="display: inline-block;">
+                        <form action="{{ url('about-us/publish', ['id' => $inventory->id]) }}" method="POST" style="display: inline-block;">
                             @method('put')
                             @csrf
-                            <button type="submit" class="btn btn-success btn-mini" onclick="return confirm('Publish {{$article->title}} ?')">
+                            <button type="submit" class="btn btn-success btn-mini" onclick="return confirm('Publish {{$inventory->title}} ?')">
                                 <i class="fa fa-check" title="Publish"></i>
                             </button>
                         </form>
 
                         @endif
-                        <a href="{{url('about-us',$article->id)}}" class="btn btn-primary btn-mini"><i class="fa fa-eye" title="Detail"></i></a>
-                        <a href="{{url('about-us',$article->id)}}/edit" class="btn btn-warning btn-mini"><i class="fa fa-edit" title="Edit"></i></a>
-                        <form action="{{ url('about-us', ['id' => $article->id]) }}" method="post" class="d-inline">
+                        <a href="{{url('admin/inventory',$inventory->id)}}" class="btn btn-primary btn-mini"><i class="fa fa-eye" title="Detail"></i></a>
+                        <a href="{{url('admin/inventory',$inventory->id)}}/edit" class="btn btn-warning btn-mini"><i class="fa fa-edit" title="Edit"></i></a>
+                        <form action="{{ url('about-us', ['id' => $inventory->id]) }}" method="post" class="d-inline">
                             @method('delete')
                             @csrf
-                            <button type="submit" class="btn btn-danger btn-mini" onclick="return confirm('Anda Yaki Ingin Menghapus about-us, {{$article->title}}?')"><i class="fa fa-trash" title="Hapus"></i></button>
+                            <button type="submit" class="btn btn-danger btn-mini" onclick="return confirm('Anda Yaki Ingin Menghapus about-us, {{$inventory->title}}?')"><i class="fa fa-trash" title="Hapus"></i></button>
                         </form>
                     </td>
                 </tr>
