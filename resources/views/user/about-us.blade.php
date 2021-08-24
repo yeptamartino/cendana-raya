@@ -5,8 +5,9 @@
     <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
             <div class="col-md-9 ftco-animate text-center">
-                <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>About us</span></p>
                 <h1 class="mb-0 bread">About us</h1>
+                <h5><p style="color: white;">Who We Are</p></h5>
+
             </div>
         </div>
     </div>
@@ -18,7 +19,7 @@
                 following military aircrafts:</p>
             <div class="col-md-12 ftco-animate fadeInUp ftco-animated">
                 <div class="cart-list">
-                    <table class="table table-striped table-hover">
+                    <table class="table table-hover">
                         <thead class="thead-primary">
                             <tr class="text-center">
                                 <th>No</th>

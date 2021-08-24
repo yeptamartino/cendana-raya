@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-        <a class="navbar-brand" href="{{ route('user.home') }}"><img src="{{asset('user-theme/images/logo.svg')}}" alt="" style="width: 6em;"></a>
+        <a class="navbar-brand" href="{{ route('user.home') }}"><img src="{{asset('user-theme/images/logo.svg')}}" alt="" style="width: 10em;"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="true" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span> Menu
+        <span class="oi oi-menu"></span>
       </button>
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">

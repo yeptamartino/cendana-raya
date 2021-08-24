@@ -32,6 +32,13 @@
 
 <body class="goto-here">
     <div class="py-1 bg-primary">
+        <div class="container">
+            <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+                <div class="col-lg-12 d-block">
+                   
+                </div>
+            </div>
+        </div>
     </div>
     <x-user-navbar></x-user-navbar>
 
@@ -57,6 +64,7 @@
                         </p>
                     </div>
                 </div>
+                
                 <div class="col-md 4">
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2">Contact Us</h2>

@@ -1749,7 +1749,7 @@ pre code {
 .table {
     width: 100%;
     margin-bottom: 1rem;
-    background-color: transparent;
+    background-color: white;
 }
 
 .table th,
@@ -8765,7 +8765,7 @@ button.bg-dark:focus {
 
 .pt-1,
 .py-1 {
-    padding-top: 0.25rem !important;
+    padding-top: 0.2rem !important;
 }
 
 .pr-1,
@@ -8775,7 +8775,7 @@ button.bg-dark:focus {
 
 .pb-1,
 .py-1 {
-    padding-bottom: 1.25rem !important;
+    padding-bottom: 0.1rem !important;
 }
 
 .pl-1,
@@ -10768,7 +10768,7 @@ h5,
 }
 
 .topper {
-    font-size: 11px;
+    font-size: 12px;
     width: 100%;
     display: block;
     text-transform: uppercase;
@@ -10834,7 +10834,7 @@ h5,
 }
 
 .ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
-    font-size: 11px;
+    font-size: 14px;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     padding-left: 20px;
@@ -11090,7 +11090,7 @@ h5,
 .hero-wrap .slider-text .bread {
     font-weight: 800;
     color: #fff;
-    font-size: 30px;
+    font-size: 60px;
     font-family: "Poppins", Arial, sans-serif;
     letter-spacing: 3px;
     text-transform: uppercase;

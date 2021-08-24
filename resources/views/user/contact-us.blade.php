@@ -5,8 +5,10 @@
     <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
             <div class="col-md-9 ftco-animate text-center">
-                <p class="breadcrumbs"><span class="mr-2"><a href="{{ route('user.home') }}">Home</a></span> <span>About us</span></p>
                 <h1 class="mb-0 bread">Contact Us</h1>
+                <h5>
+                    <p style="color: white;">Get To Know Us Closer</p>
+                </h5>
             </div>
         </div>
     </div>
@@ -35,39 +37,36 @@
                     </table>
                 </div>
             </div>
-      </div>
-      <div class="row block-9">
-        <div class="col-md-6 order-md-last d-flex">
-          <form action="#" class="bg-white p-5 contact-form">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your Name">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your Email">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Subject">
-            </div>
-            <div class="form-group">
-              <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-            </div>
-            <div class="form-group">
-              <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-            </div>
-          </form>
-        
         </div>
-        <div class="col-md-6 d-flex">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15860.206490337561!2d106.886589!3d-6.38734!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa0c0f8f82fb7c3a2!2sCendana%20Raya%20Aviation%2C%20PT.!5e0!3m2!1sid!2sid!4v1629181021631!5m2!1sid!2sid"
-                    width="1140" height="500" style="border:0; responisve" allowfullscreen=""
-                    loading="lazy"></iframe>
+        <div class="row block-9">
+            <div class="container">
+                <form action="#" class="bg-white p-5 contact-form">
+                    <div class="row justify-content-center mb-3 pb-3">
+                        <div class="col-md-12 heading-section text-center ftco-animate">
+                            <h3 class="mb-4">Message Us</h3>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="" id="" cols="30" rows="7" class="form-control"
+                            placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                    </div>
+                </form>
             </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
 {{-- <div class="page-banner" style="padding:40px 0;">
     <div class="container">
         <div class="row">
@@ -78,11 +77,11 @@
             <div class="col-md-6">
                 <ul class="breadcrumbs">
                     <li><a href="{{ route('user.home') }}">Home</a></li>
-                    <li>Contact Us</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+<li>Contact Us</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <!-- End Page Banner -->
 <!-- Start Content -->
@@ -93,13 +92,14 @@
                 <div class="col-md-7">
                     <div class="about-text">
                         <p>
-                            PT. CENDANA RAYA AVIATION has access to many aircraft parts manufacturers and distributors of
+                            PT. CENDANA RAYA AVIATION has access to many aircraft parts manufacturers and distributors
+                            of
                             the following military aircrafts:
-    
+
                         </p>
-    
+
                     </div>
-    
+
                     <table class="table table-hover table-striped table-responsive">
                         <thead>
                             <tr>
@@ -126,7 +126,9 @@
                                 <th scope="row">3</th>
                                 <td>Velisah </td>
                                 <td>velisah@cendanarayaaviation.com</td>
-                                <td> <a href="https://api.whatsapp.com/send?phone=628132290123421&text=Halo%0ASaya%20Ingin%20Bekerja%20Sama">081373760666</a></td>
+                                <td> <a
+                                        href="https://api.whatsapp.com/send?phone=628132290123421&text=Halo%0ASaya%20Ingin%20Bekerja%20Sama">081373760666</a>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">4</th>
