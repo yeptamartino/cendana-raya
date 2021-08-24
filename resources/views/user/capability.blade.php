@@ -17,7 +17,7 @@
                 following military aircrafts:</p>
             <div class="col-md-12 ftco-animate fadeInUp ftco-animated">
                 <div class="cart-list">
-                    <table class="table table-striped table-bordered">
+                    <table class="table table-striped table-hover">
                         <thead class="thead-primary">
                             <tr class="text-center">
                                 <th>No</th>

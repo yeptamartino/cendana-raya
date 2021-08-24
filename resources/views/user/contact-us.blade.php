@@ -17,7 +17,7 @@
         <div class="row d-flex mb-5 contact-info">
             <div class="col-md-12 ftco-animate fadeInUp ftco-animated">
                 <div class="cart-list">
-                    <table class="table table-striped table-bordered">
+                    <table class="table table-striped table-hover">
                         <thead class="thead-primary">
                             <tr class="text-center">
                                 <th>Address</th>

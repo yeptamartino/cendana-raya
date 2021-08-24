@@ -48,7 +48,7 @@
             </div>
             <div class="row mb-4">
                 <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
+                    <div class="ftco-footer-widget mb-4 text-justify">
                         <h2 class="ftco-heading-2">PT Cendana Raya Aviation</h2>
                         <p>
                             PT Cendana Raya Aviation is aircraft parts supplier in Indonesia. Military, commercial and
